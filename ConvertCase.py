@@ -1,6 +1,10 @@
 import streamlit as st
 import SessionState
-session_state = SessionState.get(text='')
+
+# O input armazena a string que está no text_area
+# O output armazena a conversão com o input
+# Essa armazenagem é necessária pelo text_area vir antes do button
+session_state = SessionState.get(input='', output='', key=0)
 
 
 def myfunc(word):
@@ -10,23 +14,25 @@ def myfunc(word):
 def main():
     st.title('Converter texto case')
 
-    texto = st.text_area('Digite o texto aqui a ser convertido', session_state.text)
+    # O text Area aparecerá aqui
+    # Essa instanciação serve para demarcar aonde ele ficará
+    area = st.empty()
 
     col_A_1, col_A_2, col_A_3, col_A_4, col_A_5, col_A_6 = st.beta_columns(6)
 
-    if col_A_1.button('lower case'):
-        session_state.text = texto.lower()
-    if col_A_2.button('UPPER CASE'):
-        session_state.text = texto.upper()
-    if col_A_3.button('Sentence case'):
-        session_state.text = '. '.join(i.capitalize() for i in texto.split('. '))
-    if col_A_4.button('Capitalize Case'):
-        session_state.text = texto.title()
-    if col_A_5.button('aLtErNaTiNg cAsE'):
-        session_state.text = myfunc(texto)
-    if col_A_6.button('InVeRsE CaSe'):
-        session_state.text = ''.join(c.lower() if c.isupper() else c.upper() for c in texto)
 
+    if col_A_1.button('lower case'):
+        session_state.output = session_state.input.lower()
+    if col_A_2.button('UPPER CASE'):
+        session_state.output = session_state.input.upper()
+    if col_A_3.button('Sentence case'):
+        session_state.output = '. '.join(i.capitalize() for i in session_state.input.split('. '))
+    if col_A_4.button('Capitalize Case'):
+        session_state.output = session_state.input.title()
+    if col_A_5.button('aLtErNaTiNg cAsE'):
+        session_state.output = myfunc(session_state.input)
+    if col_A_6.button('InVeRsE CaSe'):
+        session_state.output = ''.join(c.lower() if c.isupper() else c.upper() for c in session_state.input)
 
     st.markdown('---')
 
@@ -37,11 +43,17 @@ def main():
     if col_B_2.button('Copy to clipboard'):
         pass
     if col_B_3.button('Clear'):
-        # 1 - Alterar o session_state.text não funciona
-        # 2 - Dar ID a cada um dos widgets e depois incrementar causa bugs
-        # como ter que apertar mais de uma vez em botão para ter a funcionalidade
-        pass
+        # Limpando o Output é modificado o conteúdo do textarea
+        session_state.output = ''
+
+    # O text area é declarado aqui mas aparece acima dos botões
+    # Isso serve para quando se clica em um dos botões poder alterar o conteúdo do text area em tempo de execução
+    session_state.input = area.text_area('Digite o texto aqui a ser convertido', session_state.output,
+                                         key=session_state.key)
 
 
+#
 if __name__ == '__main__':
     main()
+
+# main()
