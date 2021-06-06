@@ -1,5 +1,7 @@
 # Streamlit-Apps
  Aplicativos criados com a biblioteca/framework Streamlit utilizada para criar a interface WEB
+ 
+ ![Streamlit Logo](Streamlit_Logo_1.jpg)
 
 - **ConvertCase.py** :heavy_check_mark: Completo
   - Aplicativo inspirado no site https://convertcase.net/
