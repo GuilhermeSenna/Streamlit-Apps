@@ -1,15 +1,15 @@
 # Streamlit-Apps
  Aplicativos criados com a biblioteca/framework Streamlit utilizada para criar a interface WEB
 
-- **ConvertCase.py** :point_right: :heavy_check_mark: Completo
+- **ConvertCase.py** :heavy_check_mark: Completo
   - Aplicativo inspirado no site https://convertcase.net/
   - O objetivo é lidar com diversas cases (Letras maiúsculas e minúsculas) diferentes.
-- **Statistic.py** :point_right: :hourglass: Em desenvolvimento
+- **Statistic.py** :hourglass: Em desenvolvimento
   - Aplicativo que implementa as funções estatísticas tais como média aritmética, mediana, moda, desvio padrão, etc...
   - Introdução ao Machine Learning.
   - Uso extenso da lib numpy.
   - :hourglass: Falta implementar outros métodos mais avançados, incluindo data visualization.
-- **YoutubeDownloader.py** :point_right: :hourglass: Em desenvolvimento
+- **YoutubeDownloader.py** :hourglass: Em desenvolvimento
   - Aplicativo para fazer download de vídeos do Youtube.
   - Uso da lib pytube
   - :hourglass: Falta implementar algumas coisas adicionais, como progresso de download, conversão mp3, etc..
