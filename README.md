@@ -14,7 +14,6 @@
 - **YoutubeDownloader.py** :heavy_check_mark: Completo
   - Aplicativo para fazer download de vídeos do Youtube.
   - Uso da lib pytube
-  - :hourglass: Falta implementar algumas coisas adicionais, como progresso de download, conversão mp3, etc..
 
 # Lib auxiliar:
 - SessionState.py
