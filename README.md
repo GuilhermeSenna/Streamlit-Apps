@@ -10,7 +10,7 @@
 - **Statistic.py** :hourglass: Em desenvolvimento
   - Aplicativo que implementa as funções estatísticas tais como média aritmética, mediana, moda, desvio padrão, etc...
   - Introdução ao Machine Learning.
-  - Uso extenso da lib numpy.
+  - Uso da lib numpy.
   - :hourglass: Falta implementar outros métodos mais avançados, incluindo data visualization.
 - **YoutubeDownloader.py** ✔️ Completo
   - Aplicativo para fazer download de vídeos do Youtube.
@@ -22,6 +22,7 @@
   - Colocar texto em imagem (cálculo dinâmico para poder adicionar no escopo da imagem)
   - Centralizar no eixo X e Y
   - Texto com contorno
+  - Uso da lib PIL.
 
 # Lib auxiliar:
 - SessionState.py
