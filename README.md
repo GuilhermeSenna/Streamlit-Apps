@@ -15,7 +15,7 @@
 - **YoutubeDownloader.py** ✔️ Completo
   - Aplicativo para fazer download de vídeos do Youtube
   - Mostra informações sobre o vídeo tais como: Thumbnail, título, duração do vídeo, descrição, notas
-  - Deixa o usuário escolher dentre as qualidades possíveis + tamanho do vídeo
+  - Deixa o usuário escolher entre as qualidades possíveis + tamanho do vídeo
   - Uso da lib pytube
 - **ImageEditing.py** ✔️ completo
   - Aplicativo com objetivo de fazer edições simples de imagem
