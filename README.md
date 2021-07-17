@@ -23,6 +23,12 @@
   - Centralizar no eixo X e Y
   - Texto com contorno
   - Uso da lib PIL
+- **DataframeFilter.py** ✔️ completo
+  - Aplicativo com objetivo de filtrar valores em um Dataframe Pandas
+  - Filtragem em um conjunto de pessoas (conjunto teste)
+  - Restrição por valor único: Sexo (M e F)
+  - Restrição por comparação: Idade e Salário (Maior que, Menor que e entre um intervalo)
+  - Uso da lib Pandas
 
 # Lib auxiliar:
 - SessionState.py
