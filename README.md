@@ -14,7 +14,7 @@
   - :hourglass: Falta implementar outros métodos mais avançados, incluindo data visualization
 - **YoutubeDownloader.py** ✔️ Completo
   - Aplicativo para fazer download de vídeos do Youtube
-  - Mostra informações sobre o vídeo tais como: Thumbnail, título, duração do vídeo, descrição, notas
+  - Mostra informações sobre o vídeo tais como: Thumbnail, título, duração do vídeo, descrição, avaliação
   - Deixa o usuário escolher entre as qualidades possíveis + tamanho do vídeo
   - Uso da lib pytube
 - **ImageEditing.py** ✔️ completo
