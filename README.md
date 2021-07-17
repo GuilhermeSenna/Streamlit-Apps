@@ -17,13 +17,13 @@
   - Mostra informações sobre o vídeo tais como: Thumbnail, título, duração do vídeo, descrição, avaliação
   - Deixa o usuário escolher entre as qualidades possíveis + tamanho do vídeo
   - Uso da lib pytube
-- **ImageEditing.py** ✔️ completo
+- **ImageEditing.py** ✔️ Completo
   - Aplicativo com objetivo de fazer edições simples de imagem
   - Colocar texto em imagem (cálculo dinâmico para poder adicionar no escopo da imagem)
   - Centralizar no eixo X e Y
   - Texto com contorno
   - Uso da lib PIL
-- **DataframeFilter.py** ✔️ completo
+- **DataframeFilter.py** ✔️ Completo
   - Aplicativo com objetivo de filtrar valores em um Dataframe Pandas
   - Filtragem em um conjunto de pessoas (conjunto teste)
   - Restrição por valor único: Sexo (M e F)
